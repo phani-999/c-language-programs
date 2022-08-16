@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main() {
+   int arr[5],i,flag;
+    printf("enter the numbers:\n");
+    for(i=5;i>0;i--)
+    {
+    scanf("%d",&arr[i]);
+    }
+    printf("the prime numbers are:\n");
+    for(i=1;i<=5;i++)
+    {
+        flag=0;
+        if(arr[i]!=1)
+       {
+        for(int j=2;j<arr[i];j++)
+        {
+        if(arr[i]%j==0)
+        
+        {
+            flag++;
+            break;
+        }
+        }
+         if(flag==0)
+        printf("%d\t",arr[i]);
+       
+   } 
+}
+
+    return 0;
+}
+
+input:
+enter the numbers:
+5 1 6 2 4
+output:
+the prime numbers are:
+2	5
