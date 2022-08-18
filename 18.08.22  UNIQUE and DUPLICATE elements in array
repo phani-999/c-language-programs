@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[]={1,2,3,4,5};
+    int i,j,flag;
+    int len=sizeof(arr)/sizeof(int);
+    for(i=0;i<len;i++)
+    {
+        flag=0;
+        for(j=i+1;j<len;j++)
+        {
+           if(i!=j)
+           {
+            if(arr[i]==arr[j])
+            {
+               
+               flag=1;
+               break;
+            }
+           }
+        }
+      if(flag==0)
+    printf("\nUNIQUE");
+    else
+    printf("\nDUPLICATE");
+    
+    }
+    return 0;
+}
+
+output:
+UNIQUE
+UNIQUE
+UNIQUE
+UNIQUE
+UNIQUE
