@@ -1,0 +1,22 @@
+#include <stdio.h>
+int fact(int);
+int main()
+{
+  int n,result;
+  printf("enter a number:");
+  scanf("%d",&n);
+  result=fact(n);
+  printf("factorial of %d is %d",n,result);
+}
+int fact(int x)
+{
+    int i,fact=1;
+    for(i=1;i<=x;i++)
+    fact=fact*i;
+    return fact;
+}
+
+sample input1:
+enter a number:5
+sample output1:
+factorial of 5 is 120
